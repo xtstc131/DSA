@@ -6,7 +6,11 @@ private:
 public:
 	explicit Fib(int n)
 	{
-		f = 1; g = 0; 
+		f = 1; g = 0;
+		while (g < n)
+		{
+			next();
+		}
 	}
 	int get()const { return g; }
 	int next() { g += f; f = g - f; return  g; }

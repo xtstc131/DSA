@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{81A925C6-7C1B-46AB-AE57-0E3BAC3CB04C}</ProjectGuid>
+    <ProjectGuid>{35F88594-D70A-4B8C-B3F0-CB6FCEDD8A35}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>List</RootNamespace>
+    <RootNamespace>Stack</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,21 +146,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="list.h" />
-    <ClInclude Include="listnode.h" />
-    <ClInclude Include="listnode_implementation.h" />
-    <ClInclude Include="listNode_insertAsPred.h" />
-    <ClInclude Include="listNode_insertAsSucc.h" />
-    <ClInclude Include="list_bracket.h" />
-    <ClInclude Include="list_clear.h" />
-    <ClInclude Include="list_constructor_by_copying.h" />
-    <ClInclude Include="list_copynode.h" />
-    <ClInclude Include="list_find.h" />
-    <ClInclude Include="list_implementation.h" />
-    <ClInclude Include="list_initialize.h" />
-    <ClInclude Include="list_remove.h" />
-    <ClInclude Include="list_search.h" />
-    <ClInclude Include="lsit_destructor.h" />
+    <ClInclude Include="cal.h" />
+    <ClInclude Include="paren.h" />
+    <ClInclude Include="priority.h" />
+    <ClInclude Include="rpn.h" />
+    <ClInclude Include="stack%40vector.h" />
+    <ClInclude Include="stack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="append2rpn.cpp" />
+    <ClCompile Include="calculation.cpp" />
+    <ClCompile Include="convert.h" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="priority.cpp" />
+    <ClCompile Include="readNumber.cpp" />
+    <ClCompile Include="rpn.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

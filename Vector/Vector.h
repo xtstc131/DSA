@@ -1,4 +1,4 @@
-#pragma once
+#pragma once 
 typedef int Rank;
 #define DEFAULT_CAPACITY 3
 
@@ -16,7 +16,7 @@ public:
 	~Vector() { delete[]_elem; }//释放内部空间
 //只读访问接口
 	Rank size() const{ return _size; }//返回向量的规模
-	bool empty() const { return !_size; }//size是0 就返回TURE ,否则返回FAULSE
+	bool empty() const { return !_size; }//size是0 就返回TURE ,否则返回FALSE
 	int disordered()const;//判断是否是有序的，有序返回0,不是有序返回正整数
 	Rank find(T const & e)const { return find(e, 0, _size); }//无序向量的整体查找
 	Rank find(T const & e, Rank lo, Rank hi) const;//无序向量区间查找
@@ -33,13 +33,12 @@ public:
 	Rank insert(Rank r, T const & e);//插入元素
 	Rank insert(T const & e) { return insert(_size, e); }//默认在末尾加入元素
 	void sort(Rank lo, Rank hi);//对区间[lo,hi)排序
-	void sort() { sort(0, _size); }//默认整体排序
+	void sort();//默认整体排序
 	void unsort(Rank lo, Rank hi);//对区间[lo,hi)弄乱
 	void unsort() { sort(0, _size); }//默认整体弄乱
 	int deduplicate();//无序去重
 	int uniquify();//有序去重
-	
-//遍历
+	//遍历
 	void traverse(void(*)(T&));//遍历(使用函数指针，只读或局部性修改)
 	template<typename VST>void traverse(VST&);//遍历(使用函数对象，可全局修改)
 protected:

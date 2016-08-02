@@ -15,50 +15,46 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="listnode.h">
+    <ClInclude Include="stack.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="listnode_implementation.h">
+    <ClInclude Include="stack%40vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="listNode_insertAsSucc.h">
+    <ClInclude Include="paren.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="listNode_insertAsPred.h">
+    <ClInclude Include="cal.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="list.h">
+    <ClInclude Include="rpn.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="list_bracket.h">
+    <ClInclude Include="priority.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="list_clear.h">
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.h">
       <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="list_constructor_by_copying.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="list_copynode.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="list_implementation.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="list_initialize.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="list_remove.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="lsit_destructor.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="list_find.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="list_search.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="readNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="priority.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rpn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="calculation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="append2rpn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

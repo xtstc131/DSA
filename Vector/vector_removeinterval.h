@@ -4,12 +4,13 @@ template <typename T >
  {
      if (lo == hi)
      {
-         return ;
+         return 0;
      }
      while (hi < _size)
      {
          _elem[lo++] = _elem[hi++];
      }
+	 _size = lo;
     shrink();
     return hi - lo;
  }

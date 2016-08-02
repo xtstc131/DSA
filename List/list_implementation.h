@@ -1,0 +1,10 @@
+#pragma once
+#include "list_initialize.h"
+#include "list_bracket.h"
+#include "list_clear.h"
+#include "list_remove.h"
+#include "list_copynode.h"
+#include "list_constructor_by_copying.h"
+#include "lsit_destructor.h"
+#include "list_find.h"
+#include "list_search.h"
