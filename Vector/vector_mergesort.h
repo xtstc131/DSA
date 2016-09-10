@@ -7,6 +7,5 @@ void Vector<T>::mergeSort(Rank lo, Rank hi)
 	auto mi = (lo + hi) >> 1;
 	mergeSort(mi, hi);
 	mergeSort(lo, mi);
-
 	merge(lo, mi, hi);
 }

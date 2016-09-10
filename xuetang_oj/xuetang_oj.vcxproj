@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{35F88594-D70A-4B8C-B3F0-CB6FCEDD8A35}</ProjectGuid>
+    <ProjectGuid>{9C738CB8-F546-4E20-A920-7E621146E607}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Stack</RootNamespace>
+    <RootNamespace>xuetang_oj</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,20 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="paren.h" />
-    <ClInclude Include="priority.h" />
-    <ClInclude Include="rpn.h" />
-    <ClInclude Include="stack%40vector.h" />
-    <ClInclude Include="stack.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="append2rpn.cpp" />
-    <ClCompile Include="calculation.cpp" />
-    <ClCompile Include="convert.h" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="priority.cpp" />
-    <ClCompile Include="readNumber.cpp" />
-    <ClCompile Include="rpn.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

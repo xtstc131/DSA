@@ -23,6 +23,8 @@
 //	}
 //	return S.empty();
 //}
+
+
 //俗称别人的代码
 inline bool paren(const char exp[], int lo, int hi) { //表达式括号匹配检查，可兼顾三种括号
 	Stack<char> S; //使用栈记录已发现但尚未匹配的左括号
