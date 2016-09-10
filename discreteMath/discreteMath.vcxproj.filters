@@ -18,8 +18,34 @@
     <ClInclude Include="rpnDiscrete.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="rpnDec.cpp">
-      <Filter>源文件</Filter>
+    <ClInclude Include="priority.h">
+      <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="isProp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pushProp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="priority.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="toBinary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="calculation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="judgeNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="normalForm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

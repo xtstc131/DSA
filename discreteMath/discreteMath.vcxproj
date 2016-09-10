@@ -110,8 +110,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="rpnDec.cpp" />
+    <ClInclude Include="priority.h" />
     <ClInclude Include="rpnDiscrete.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="calculation.cpp" />
+    <ClCompile Include="isProp.cpp" />
+    <ClCompile Include="judgeNumber.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="normalForm.cpp" />
+    <ClCompile Include="priority.cpp" />
+    <ClCompile Include="pushProp.cpp" />
+    <ClCompile Include="toBinary.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
