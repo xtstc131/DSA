@@ -1,3 +1,5 @@
+#pragma once
+
 #include "rpnDiscrete.h"
 
 Rank optr2rank(char op)

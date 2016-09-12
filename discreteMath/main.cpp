@@ -3,18 +3,26 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
+#include <ctime>
 using namespace std;
+char lett[11] = { 'P','Q','R','S','T','U','V','W','X','Y','Z' };
 int main()
 {
-	char s[] = "P-((P-Q)&!(!Q|!P))";
-	char let[11] = { 'P','Q','R','S','T','U','V','W','X','Y','Z' };
+	
+	char s[50];
+	printf("Please input your formula:\n");
+	gets_s(s);
+	//计时用
+	clock_t start, finish;
+	start = clock();
+
 	string disJunc;//储存主析取范式的字符串
 	string  conJunc;//储存主和取范式的字符串
 	//printf("%c", s[0]);
 	auto num = judgeNum(s);//储存有多少个不同的命题
 	auto _num = 2 << num;//储存2^num，就是有多少种不同的真值情况
 	//printf("%d", num);
-	for (int i = 0; i <= num; i++)	printf("%c ", let[i]);
+	for (auto i = 0; i <= num; i++)	printf("%c ", lett[i]);
 	printf("%s\n", s);
 	for (auto i = 0 ; i < _num ; i++)
 	{
@@ -26,11 +34,15 @@ int main()
 		Result ? createDis(num,disJunc,realVal) : createCon(num,conJunc,realVal);
 		printf("\n");
 	}
+	
 	disJunc = disJunc.substr(0, disJunc.length() - 2);
 	conJunc = conJunc.substr(0, conJunc.length() - 2);
 	
 	cout <<"Disjunction:"<<"\n"<<disJunc<<endl;
 	cout <<"Conjunction:"<<"\n"<<conJunc;
+	
+	finish = clock();
+	printf("共耗时%.3lf秒", (double(finish) - start) / 1000);
 	getchar();
 	return  0;
 }

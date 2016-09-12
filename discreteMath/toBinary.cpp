@@ -1,7 +1,9 @@
+#pragma once
+
 #include "rpnDiscrete.h"
 void toBinary(int m,int n, Vector<bool> & trueVal)
 {
-	int bit = 0; //printf("y:/n");
+	auto bit = 0; //printf("y:/n");
 	while (n > 0)
 	{
 		bit = n % 2;

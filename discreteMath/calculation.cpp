@@ -1,3 +1,4 @@
+#pragma once
 #include"rpnDiscrete.h"
 bool calc(bool a, char op, bool b)
 {
@@ -6,7 +7,7 @@ bool calc(bool a, char op, bool b)
 	case '&':return  a & b;
 	case '|':return  a | b;
 	case '-':return  !a | b;
-	case '=':return  a ^ b;
+	case '=':return  !(a ^ b);
 	default:exit(-1);
 	}
 }

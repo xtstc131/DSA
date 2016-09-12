@@ -1,7 +1,7 @@
 #include "rpn.h"
 void append(char*& rpn, float opnd) { //将操作数接至RPN末尾
 	//printf("append_opnd:%f\n", opnd);
-	int n = strlen(rpn);
+	int n = int(strlen(rpn));
 	//printf("%d", n);//RPN当前长度（以'\0'结尾，长度n + 1）
 	char buf[64];
 	//printf("append_opnd:%f", opnd);
@@ -13,7 +13,7 @@ void append(char*& rpn, float opnd) { //将操作数接至RPN末尾
 	}
 
 void append(char*& rpn, char optr) { //将运算符接至RPN末尾
-	int n = strlen(rpn); //RPN当前长度（以'\0'结尾，长度n + 1）
+	int n = int (strlen(rpn)); //RPN当前长度（以'\0'结尾，长度n + 1）
 	rpn = static_cast<char*>(realloc(rpn, sizeof(char) * (n + 3))); //扩展空间
 	sprintf(rpn + n, "%c ", optr); rpn[n + 2] = '\0'; //接入指定的运算符
 }

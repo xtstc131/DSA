@@ -1,3 +1,5 @@
+#pragma once
+
 #include "rpnDiscrete.h"
 bool isProp(char c)
 {

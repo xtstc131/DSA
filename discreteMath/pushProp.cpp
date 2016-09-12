@@ -1,3 +1,5 @@
+#pragma once
+
 #include"rpnDiscrete.h"
 void pushProp(char c,Vector<bool> &trueVal, Stack<bool> & oppr)
 {
