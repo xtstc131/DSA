@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="vector_maxHeapify.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="vector_assignment.h" />
     <ClInclude Include="vector_bracket.h" />
@@ -30,10 +31,12 @@
     <ClInclude Include="vector_deduplicate.h" />
     <ClInclude Include="vector_expand.h" />
     <ClInclude Include="vector_find.h" />
+    <ClInclude Include="vector_heapSort.h" />
     <ClInclude Include="vector_implementation.h" />
     <ClInclude Include="vector_insert.h" />
     <ClInclude Include="vector_merge.h" />
     <ClInclude Include="vector_mergesort.h" />
+    <ClInclude Include="vector_quickSort.h" />
     <ClInclude Include="vector_remove.h" />
     <ClInclude Include="vector_removeinterval.h" />
     <ClInclude Include="vector_search.h" />

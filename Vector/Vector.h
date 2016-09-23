@@ -55,6 +55,11 @@ protected:
 	void selectionSort(Rank lo, Rank hi);//选择排序
 	void merge(Rank lo, Rank mi, Rank hi);//归并算法
 	void mergeSort(Rank lo, Rank hi);//归并排序算法
+
+	Rank partion(Rank p, Rank r);
+	void quickSort(Rank p , Rank r);//堆排序算法
+	void maxHeapify(int index);
+	void heapSort();//快速排序算法
 	//轴点构造
 	//快速排序
 	//堆排序

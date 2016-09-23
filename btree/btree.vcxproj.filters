@@ -15,40 +15,17 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="rpnDiscrete.h">
+    <ClInclude Include="btnode.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="priority.h">
+    <ClInclude Include="btree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="isProp.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="pushProp.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="priority.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="toBinary.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="calculation.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="judgeNumber.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="normalForm.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="rpnEvaluate.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="btree_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="btree_search.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

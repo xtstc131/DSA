@@ -24,7 +24,8 @@ void createCon(int  n , string & s, Vector<bool> & r)
 	for (auto i = 0; i <= n; i++) {
 		if (!i) s += "( ";
 		
-		if (!r[i]) {
+		if (
+			r[i]) {
 			s += "!";
 		}
 		

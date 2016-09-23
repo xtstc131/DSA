@@ -99,5 +99,14 @@
     <ClInclude Include="vector_sort.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="vector_heapSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_maxHeapify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_quickSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

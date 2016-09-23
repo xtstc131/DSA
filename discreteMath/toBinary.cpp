@@ -3,7 +3,7 @@
 #include "rpnDiscrete.h"
 void toBinary(int m,int n, Vector<bool> & trueVal)
 {
-	auto bit = 0; //printf("y:/n");
+	auto bit = 0; 
 	while (n > 0)
 	{
 		bit = n % 2;

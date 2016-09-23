@@ -21,10 +21,13 @@
 
 #include "vector_merge.h"
 #include "vector_mergesort.h"
+#include "vector_heapSort.h"
+#include"vector_maxHeapify.h"
 #include "vector_selectorsort.h"
 #include "vector_bubble.h"
 #include "vector_bubblesort.h"
 #include "vector_sort.h"
+#include "vector_quickSort.h"
 
 //#include "vector_bubblesort_fast.h"
 //#include "vector_bubble_fast.h"

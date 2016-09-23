@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{318AD559-597F-4A39-BC5E-CEFDC996F49B}</ProjectGuid>
-    <RootNamespace>discreteMath</RootNamespace>
+    <ProjectGuid>{3A4ECD99-D935-4C03-9D69-5E7D6E590DC2}</ProjectGuid>
+    <RootNamespace>btree</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,19 +110,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="priority.h" />
-    <ClInclude Include="rpnDiscrete.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="calculation.cpp" />
-    <ClCompile Include="isProp.cpp" />
-    <ClCompile Include="judgeNumber.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="normalForm.cpp" />
-    <ClCompile Include="priority.cpp" />
-    <ClCompile Include="pushProp.cpp" />
-    <ClCompile Include="rpnEvaluate.cpp" />
-    <ClCompile Include="toBinary.cpp" />
+    <ClInclude Include="btnode.h" />
+    <ClInclude Include="btree.h" />
+    <ClInclude Include="btree_implementation.h" />
+    <ClInclude Include="btree_search.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

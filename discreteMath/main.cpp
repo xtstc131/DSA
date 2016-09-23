@@ -8,7 +8,7 @@ using namespace std;
 char lett[11] = { 'P','Q','R','S','T','U','V','W','X','Y','Z' };
 int main()
 {
-	
+
 	char s[50];
 	printf("Please input your formula:\n");
 	gets_s(s);
@@ -24,23 +24,23 @@ int main()
 	//printf("%d", num);
 	for (auto i = 0; i <= num; i++)	printf("%c ", lett[i]);
 	printf("%s\n", s);
-	for (auto i = 0 ; i < _num ; i++)
+	for (auto i = 0; i < _num; i++)
 	{
-		auto realVal = Vector<bool>(_num,_num,false);
-	    toBinary(num,i,realVal);
+		auto realVal = Vector<bool>(_num, _num, false);
+		toBinary(num, i, realVal);
 		for (auto j = 0; j <= num; j++)realVal[j] ? printf("T ") : printf("F ");
 		auto Result = evaluate(s, realVal);
-		Result ? printf("T "): printf("F ");
-		Result ? createDis(num,disJunc,realVal) : createCon(num,conJunc,realVal);
+		Result ? printf("T ") : printf("F ");
+		Result ? createDis(num, disJunc, realVal) : createCon(num, conJunc, realVal);
 		printf("\n");
 	}
-	
+
 	disJunc = disJunc.substr(0, disJunc.length() - 2);
 	conJunc = conJunc.substr(0, conJunc.length() - 2);
-	
-	cout <<"Disjunction:"<<"\n"<<disJunc<<endl;
-	cout <<"Conjunction:"<<"\n"<<conJunc;
-	
+
+	cout << "Disjunction:" << "\n" << disJunc << endl;
+	cout << "Conjunction:" << "\n" << conJunc;
+
 	finish = clock();
 	printf("¹²ºÄÊ±%.3lfÃë", (double(finish) - start) / 1000);
 	getchar();
