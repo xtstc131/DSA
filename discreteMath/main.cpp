@@ -1,7 +1,6 @@
 #pragma once
 #include "rpnDiscrete.h"
 #include <stdio.h>
-#include <iostream>
 #include <string>
 #include <ctime>
 using namespace std;

@@ -15,7 +15,7 @@ template <typename T> struct BinNode { //二叉树节点模板类
 				   // 构造函数
 	BinNode() :
 		parent(nullptr), lc(nullptr), rc(nullptr), height(0), npl(1), color(RB_RED) { }
-	BinNode(T e, BinNodePosi(T) p = nullptr, BinNodePosi(T) lc = nullptr, BinNodePosi(T) rc = nullptr,
+	explicit BinNode(T e, BinNodePosi(T) p = nullptr, BinNodePosi(T) lc = nullptr, BinNodePosi(T) rc = nullptr,
 		int h = 0, int l = 1, RBColor c = RB_RED) :
 		data(e), parent(p), lc(lc), rc(rc), height(h), npl(l), color(c) { }
 	// 操作接口
@@ -34,4 +34,4 @@ template <typename T> struct BinNode { //二叉树节点模板类
 	/*DSA*/BinNodePosi(T) zig(); //顺时针旋转
 	/*DSA*/BinNodePosi(T) zag(); //逆时针旋转
 };
- 
+#include "binnode_implement.h"

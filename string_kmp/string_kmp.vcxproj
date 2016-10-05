@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{34BC256A-F8EE-4CE5-AFEB-1DA89BE669B1}</ProjectGuid>
-    <RootNamespace>bintree</RootNamespace>
+    <ProjectGuid>{1DC026D2-A8AA-4FBA-8DB5-EDB905E2FBE8}</ProjectGuid>
+    <RootNamespace>string_kmp</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,19 +110,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="binnode.h" />
-    <ClInclude Include="binnode_implement.h" />
-    <ClInclude Include="binnode_insert.h" />
-    <ClInclude Include="binnode_macro_basic.h" />
-    <ClInclude Include="binnode_size.h" />
-    <ClInclude Include="binnode_succ.h" />
-    <ClInclude Include="binnode_travinorder.h" />
-    <ClInclude Include="binnode_travinorder_i1.h" />
-    <ClInclude Include="binnode_travinorder_i2.h" />
-    <ClInclude Include="binnode_travinorder_i3.h" />
-    <ClInclude Include="binnode_travinorder_i4.h" />
-    <ClInclude Include="binnode_travinorder_r.h" />
-    <ClInclude Include="bintree.h" />
+    <ClCompile Include="kmp_next.h" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Findkmp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

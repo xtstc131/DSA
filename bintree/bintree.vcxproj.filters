@@ -18,5 +18,41 @@
     <ClInclude Include="binnode.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="binnode_implement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_size.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_succ.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_macro_basic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_travinorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_travinorder_i1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_travinorder_i2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_travinorder_i3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_travinorder_i4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bintree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binnode_travinorder_r.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
