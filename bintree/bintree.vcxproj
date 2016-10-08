@@ -122,7 +122,10 @@
     <ClInclude Include="binnode_travinorder_i3.h" />
     <ClInclude Include="binnode_travinorder_i4.h" />
     <ClInclude Include="binnode_travinorder_r.h" />
+    <ClInclude Include="binnode_travLevel.h" />
     <ClInclude Include="bintree.h" />
+    <ClInclude Include="bintree_implementation.h" />
+    <ClInclude Include="bintree_updateheight.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,7 +6,7 @@ class BinTree
 protected:
 	int _size;
 	BinNodePosi(T) _root;
-	virtual updateHeight(BinNodePosi(T) x);//更新节点高度
+	virtual int updateHeight(BinNodePosi(T) x);//更新节点高度
 	void updateHeightAbove(BinNodePosi(T) x); //更新节点X及其祖先的高度
 public:
 	BinTree(): _size(0),_root(nullptr){}
@@ -17,8 +17,8 @@ public:
 	BinNodePosi(T) insertAsRoot(T const& e); //插入根节点
 	BinNodePosi(T) insertAsLC(BinNodePosi(T) x, T const& e); //e作为x的左孩子（原无）插入
 	BinNodePosi(T) insertAsRC(BinNodePosi(T) x, T const& e); //e作为x的右孩子（原无）插入
-	BinNodePosi(T) attachAsLC(BinNodePosi(T) x, BinTree<T>* &T); //T作为x左子树接入
-	BinNodePosi(T) attachAsRC(BinNodePosi(T) x, BinTree<T>* &T); //T作为x右子树接入
+	BinNodePosi(T) attachAsLC(BinNodePosi(T) x, BinTree<T>* & t); //T作为x左子树接入
+	BinNodePosi(T) attachAsRC(BinNodePosi(T) x, BinTree<T>* & t); //T作为x右子树接入
 	int remove(BinNodePosi(T) x); //删除以位置x处节点为根的子树，返回该子树原先的规模
 	BinTree<T>* secede(BinNodePosi(T) x); //将子树x从当前树中摘除，并将其转换为一棵独立子树
 	template <typename VST> //操作器
@@ -33,7 +33,7 @@ public:
 	{
 		return _root && t._root && lt(_root, t._root);
 	}
-	bool operator== (BinTree<T> const& t) //判等器
+	bool operator == (BinTree<T> const& t) //判等器
 	{
 		return _root && t._root && (_root == t._root);
 	}
@@ -43,3 +43,4 @@ public:
 
 
 };
+#include"bintree_implementation.h"

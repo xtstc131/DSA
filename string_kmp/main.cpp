@@ -11,6 +11,15 @@ int fib(int n)
 	}
 
 }
+int Catalan(int n)
+{
+	if (n == 1)
+	{
+		return 1;
+	}
+	return Catalan(n - 1) *(4 * n - 6) / n;
+}
+
 int main()
 {
 	//char* s = "abcabcabbac";
@@ -21,8 +30,7 @@ int main()
 	//cout << endl;
 	//for (int i = 0; i < strlen(s); i++)
 	//	cout << N_1[i] << " ";
-	for (int i = 0; i < 5; i++)
-		cout << fib(i + 1)<<" ";
+	cout << Catalan(6);
 	getchar();
 
 }

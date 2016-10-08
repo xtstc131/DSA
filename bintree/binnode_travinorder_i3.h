@@ -13,7 +13,7 @@ void travIn_I3(BinNodePosi(T) x, VST& visit) { //¶ş²æÊ÷ÖĞĞò±éÀúËã·¨£¨µü´ú°æ#3£¬Î
 				backtrack = false; //²¢¹Ø±Õ»ØËİ±êÖ¾
 			}
 			else { //ÈôÓÒ×ÓÊ÷¿Õ£¬Ôò
-				if ((x = x->succ()) == nullptr) break; //»ØËİ£¨º¬µÖ´ïÄ©½ÚµãÊ±µÄÍË³ö·µ»Ø£©
+				if (!((x = x->succ()))) break; //»ØËİ£¨º¬µÖ´ïÄ©½ÚµãÊ±µÄÍË³ö·µ»Ø£©
 				backtrack = true; //²¢ÉèÖÃ»ØËİ±êÖ¾
 			}
 		}

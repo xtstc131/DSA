@@ -41,8 +41,8 @@ inline int * Next_1(char * P)
 inline int * Next_Improve(char * P)
 {
 	size_t m = strlen(P), j = 0;
-	int * N = new int[m];
-	int t = N[0] = -1;
+	auto N = new int[m];
+	auto t = N[0] = -1;
 	while (j < m - 1)
 	{
 		if (0 > t || P[j] == P[t])
