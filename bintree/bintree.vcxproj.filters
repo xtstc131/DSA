@@ -63,5 +63,22 @@
     <ClInclude Include="binnode_travLevel.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="bintree_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bintree_attach.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bintree_depth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bintree_height.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

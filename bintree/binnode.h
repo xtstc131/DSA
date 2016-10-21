@@ -23,13 +23,17 @@ template <typename T> struct BinNode { //二叉树节点模板类
 	BinNodePosi(T) insertAsLC(T const&); //作为当前节点的左孩子插入新节点
 	BinNodePosi(T) insertAsRC(T const&); //作为当前节点的右孩子插入新节点
 	BinNodePosi(T) succ(); //取当前节点的直接后继
+	
 	template <typename VST> void travLevel(VST&); //子树层次遍历
 	template <typename VST> void travPre(VST&); //子树先序遍历
 	template <typename VST> void travIn(VST&); //子树中序遍历
 	template <typename VST> void travPost(VST&); //子树后序遍历
 												 // 比较器、判等器（各列其一，其余自行补充）
 	bool operator < (BinNode const& bn) { return data < bn.data; } //小于
-	bool operator== (BinNode const& bn) { return data == bn.data; } //等于
+	bool operator > (BinNode const& bn) { return data > bn.data; } //大于
+	bool operator <= (BinNode const& bn) { return data <= bn.data; } //小于等于
+	bool operator >= (BinNode const& bn) { return data >= bn.data; } //大于等于
+	bool operator == (BinNode const& bn) { return data == bn.data; } //等于
 																	/*DSA*/
 	/*DSA*/BinNodePosi(T) zig(); //顺时针旋转
 	/*DSA*/BinNodePosi(T) zag(); //逆时针旋转

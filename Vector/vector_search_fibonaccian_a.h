@@ -9,6 +9,7 @@
 #pragma once
 
 #include "../Fib/Fib.h" //引入Fib数列类
+#include <cstdio>
 
 // Fibonacci查找算法（版本A）：在有序向量的区间[lo, hi)内查找元素e，0 <= lo <= hi <= _size
 template <typename T> static Rank fibSearch ( T* A, T const& e, Rank lo, Rank hi ) {

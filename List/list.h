@@ -44,8 +44,17 @@ public:
 	ListNodePosi(T) selectMax(ListNodePosi(T) p, int n);//在p及其以后的n - 1个后继选出最大者
 	ListNodePosi(T) selectMax() { return selectMax(header->succ, _size); }//整体最大者
 	//可写访问接口
-	ListNodePosi(T) insertAsFirst(T const& e);//将e作为首节点插入
-	ListNodePosi(T) insertAsLast(T const& e);//将e作为尾节点插入
+	ListNodePosi(T) insertAsFirst(T const& e)
+	{
+		_size++;
+		return header->insertAsSucc(e);
+	}//将e作为首节点插入
+	ListNodePosi(T) insertAsLast(T const& e)
+	{
+		_size++;
+		return trailer->insertAsPred(e);
+	}
+	//将e作为尾节点插入
 	ListNodePosi(T) insertA(ListNodePosi(T) p, T const& e);//把e作为p的后继插入
 	ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);//把e作为p的前驱插入
 	T remove(ListNodePosi(T) p);
