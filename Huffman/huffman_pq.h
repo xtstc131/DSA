@@ -1,8 +1,10 @@
 #pragma once
-#include"../PriorityQueue/PQMin.h"
+
+#include<string.h>
 #include<map>
+#include"../PriorityQueue/PQMin.h"
+#include"../BitMap/bitmap.h"
 #include<fstream>
 #include"HuffChar.h"
 #include"Huffman.h"
 #include"HuffForest.h"
-#include<string.h>

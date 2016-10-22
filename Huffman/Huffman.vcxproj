@@ -117,9 +117,6 @@
     <ClInclude Include="huffman_pq.h" />
     <ClInclude Include="Huffman_pq_implementation.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
