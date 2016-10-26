@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8puzzle", "8puzzle\8puzzle.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BitMap", "BitMap\BitMap.vcxproj", "{20255DD6-9CB5-4C7E-8451-7877ED7CD5F1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BStree", "BStree\BStree.vcxproj", "{E1D1FECB-9826-41FD-85C8-4222298238BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{20255DD6-9CB5-4C7E-8451-7877ED7CD5F1}.Release|x64.Build.0 = Release|x64
 		{20255DD6-9CB5-4C7E-8451-7877ED7CD5F1}.Release|x86.ActiveCfg = Release|Win32
 		{20255DD6-9CB5-4C7E-8451-7877ED7CD5F1}.Release|x86.Build.0 = Release|Win32
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Debug|x64.ActiveCfg = Debug|x64
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Debug|x64.Build.0 = Debug|x64
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Debug|x86.Build.0 = Debug|Win32
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Release|x64.ActiveCfg = Release|x64
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Release|x64.Build.0 = Release|x64
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Release|x86.ActiveCfg = Release|Win32
+		{E1D1FECB-9826-41FD-85C8-4222298238BA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

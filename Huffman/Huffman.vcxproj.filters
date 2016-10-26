@@ -33,5 +33,16 @@
     <ClInclude Include="Huffman_pq_implementation.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="huffman_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mainPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

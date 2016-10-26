@@ -27,8 +27,8 @@ public:
 	BinNodePosi(T) insertAsRoot(T const& e); //插入根节点
 	BinNodePosi(T) insertAsLC(BinNodePosi(T) x, T const& e); //e作为x的左孩子（原无）插入
 	BinNodePosi(T) insertAsRC(BinNodePosi(T) x, T const& e); //e作为x的右孩子（原无）插入
-	BinNodePosi(T) attachAsLC(BinNodePosi(T) x, BinTree<T>* & t); //T作为x左子树接入
-	BinNodePosi(T) attachAsRC(BinNodePosi(T) x, BinTree<T>* & t); //T作为x右子树接入
+	BinNodePosi(T) attachAsLC(BinNodePosi(T) x, BinTree<T>*  t); //T作为x左子树接入
+	BinNodePosi(T) attachAsRC(BinNodePosi(T) x, BinTree<T>*  t); //T作为x右子树接入
 	BinTree<T>* secede(BinNodePosi(T) x)
 	{
 		FromParentTo(*x) = nullptr;
@@ -113,7 +113,23 @@ public:
 		preTrav(x->lc);
 		preTrav(x->rc);
 	}
-	
+	void inTrav()
+	{
+		cout << "InOrder Travel:\n";
+		inTrav(_root);
+		cout << endl;
+	}
+	void inTrav(BinNodePosi(T) x)
+	{
+		if (!x)
+		{
+			return;
+		}
+		inTrav(x->lc);
+		cout << x->data << " ";
+		inTrav(x->rc);
+	}
+
 	//层序遍历
 	void levelTrav()
 	{
@@ -152,11 +168,11 @@ public:
 																	 //重载运算符
 	bool operator > (BinTree<T> const& t) //比较器（其余自行补充）
 	{
-		return _root && t._root && *_root > *(t->_root);
+		return _root&& t._root && *_root > *(t->_root);
 	}
 	bool operator < (BinTree<T> const& t) //比较器（其余自行补充）
 	{
-		return _root && t._root &&*_root < *(t->_root);
+		return _root&& t._root && *_root > *(t->_root);
 	}
 	bool operator <= (BinTree<T> const& t) //比较器（其余自行补充）
 	{

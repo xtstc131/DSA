@@ -2,7 +2,7 @@
 #include "kmp_next.h"
 inline int FindKmp(const char * P , char * Q)
 {
-	int i = 0 ,j = 0, m = strlen(P), n = strlen(Q);
+	int i = 0 ,j = 0, m = strlen(P);
 	auto a = Next_Improve(Q);
 	while(i < m )
 	{

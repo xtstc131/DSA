@@ -15,10 +15,11 @@ public:
 		_size = n;
 		_elem = new T[n];
 		_capicity = n << 1;
-		for(int i = 0 ;i< n ; ++i )
+		for(int i = 0 ;i< n ; i++ )
 		{
 			_elem[i] = array[i];
 		}
+		heapify(_size-1);
 	}
 	//Destructor
 	~PQMin();

@@ -25,5 +25,9 @@ struct HuffChar
 	{
 		return weight == hc.weight;
 	}
-
+	friend	ostream & operator <<(ostream & out,const HuffChar & H) 
+	{
+		out <<H.ch<<" "<<H.weight<<"	";
+		return out;
+	}
 };

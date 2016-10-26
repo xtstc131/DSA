@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4F7FA235-81CC-4A85-9CB9-55A3AC1A2DD2}</ProjectGuid>
-    <RootNamespace>PriorityQueue</RootNamespace>
+    <ProjectGuid>{E1D1FECB-9826-41FD-85C8-4222298238BA}</ProjectGuid>
+    <RootNamespace>BStree</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,12 +110,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="PQMin.h" />
-    <ClInclude Include="PqMin_impletation.h" />
-    <ClInclude Include="PQMin_macro.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="BST.h" />
+    <ClInclude Include="BST_implemetation.h" />
+    <ClInclude Include="BST_insert.h" />
+    <ClInclude Include="BST_search.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

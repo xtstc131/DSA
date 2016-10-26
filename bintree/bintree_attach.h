@@ -1,6 +1,6 @@
 #pragma once
 template <typename T>
-BinNodePosi(T) BinTree<T>::attachAsLC(BinNodePosi(T) x, BinTree<T>*& t)
+BinNodePosi(T) BinTree<T>::attachAsLC(BinNodePosi(T) x, BinTree<T>* t)
 {
 	if ((x->lc = t->_root)) x->lc->parent = x;
 	_size += t->_size;
@@ -12,7 +12,7 @@ BinNodePosi(T) BinTree<T>::attachAsLC(BinNodePosi(T) x, BinTree<T>*& t)
 }
 
 template <typename T>
-BinNodePosi(T) BinTree<T>::attachAsRC(BinNodePosi(T) x, BinTree<T>*& t)
+BinNodePosi(T) BinTree<T>::attachAsRC(BinNodePosi(T) x, BinTree<T>* t)
 {
 	if ((x->rc = t->_root)) x->rc->parent = x;
 	_size += t->_size;

@@ -32,11 +32,14 @@ public:
 	//	8个比特，故通过移位运算：
 	//	k >> 3		即可确定对应的比特位所属字节的秩；
 	//	通过逻辑位与运算：
-	//	k & 0x07    即可确定该比特位在此字节中的位置；通过移位操作：
+	//	k & 0x07    即可确定该比特位在此字节中的位置；
+	//	通过移位操作：
 	//	0x80 >> (k & 0x07)		即可得到该比特位在此字节中对应的数值掩码（mask）。
 	void set(int k) { expand(k);        M[k >> 3] |= (0x80 >> (k & 0x07)); }
 	void clear(int k) { expand(k);        M[k >> 3] &= ~(0x80 >> (k & 0x07)); }
 	bool test(int k) { expand(k); return M[k >> 3] & (0x80 >> (k & 0x07)); }
+	int lengh() const
+	{ return N ; }
 	string  bit2string(int n)
 	{
 		expand(n - 1);

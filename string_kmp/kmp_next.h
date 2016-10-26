@@ -56,4 +56,4 @@ inline int * Next_Improve(char * P)
 	}
 	return N;
 
-}
+}  
