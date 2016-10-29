@@ -112,7 +112,10 @@
   <ItemGroup>
     <ClInclude Include="btnode.h" />
     <ClInclude Include="btree.h" />
+    <ClInclude Include="btree_flow.h" />
     <ClInclude Include="btree_implementation.h" />
+    <ClInclude Include="btree_insert.h" />
+    <ClInclude Include="btree_remove.h" />
     <ClInclude Include="btree_search.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

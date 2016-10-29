@@ -27,5 +27,14 @@
     <ClInclude Include="btree_search.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="btree_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="btree_remove.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="btree_flow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
