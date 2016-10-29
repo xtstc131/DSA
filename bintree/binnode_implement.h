@@ -6,3 +6,4 @@
 #include "binnode_succ.h"
 #include"binnode_travinorder.h"
 #include"binnode_travLevel.h"
+#include"binnode_zigzag.h"

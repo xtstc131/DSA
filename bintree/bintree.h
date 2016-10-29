@@ -1,5 +1,8 @@
 #pragma once
 #include"binnode.h"
+#define FromParentTo(x) /*来自父亲的引用*/ \
+   ( IsRoot(x) ? _root : ( IsLChild(x) ? (x).parent->lc : (x).parent->rc ) )
+
 template<typename T>
 class BinTree
 {

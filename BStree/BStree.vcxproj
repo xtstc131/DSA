@@ -111,8 +111,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BST.h" />
+    <ClInclude Include="BST_connect34.h" />
+    <ClInclude Include="BST_delete.h" />
     <ClInclude Include="BST_implemetation.h" />
     <ClInclude Include="BST_insert.h" />
+    <ClInclude Include="BST_rotateAt.h" />
     <ClInclude Include="BST_search.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

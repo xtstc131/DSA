@@ -15,25 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BST.h">
+    <ClInclude Include="AVL.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="BST_implemetation.h">
+    <ClInclude Include="avl_macro.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="BST_insert.h">
+    <ClInclude Include="avl_implementation.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="BST_search.h">
+    <ClInclude Include="avl_insert.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="BST_delete.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BST_connect34.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BST_rotateAt.h">
+    <ClInclude Include="avl_delete.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
