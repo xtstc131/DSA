@@ -6,10 +6,10 @@
 template <typename T>
 struct BTNode
 {
-	BTNodePosi(T) parent;//¸¸½Úµã
-	Vector<T> key;//¹Ø¼üÂëÏòÁ¿;
-	Vector<BTNodePosi(T)> child;//º¢×ÓÏòÁ¿£¨Æä³¤¶È×Ü±Èkey¶à 1£©
-//¹¹Ôìº¯Êı£¨×¢Òâ£ºBTNodeÖ»ÄÜ×÷Îª¸ù½Úµã´´½¨£¬¶øÇÒ´´½¨µÄÊ±ºò×ÜÓĞ0¸ö¹Ø¼üÂëºÍ1¸ö¿Õ½Úµã£©	
+	BTNodePosi(T) parent;//çˆ¶èŠ‚ç‚¹
+	Vector<T> key;//å…³é”®ç å‘é‡;
+	Vector<BTNodePosi(T)> child;//å­©å­å‘é‡ï¼ˆå…¶é•¿åº¦æ€»æ¯”keyå¤š 1ï¼‰
+//æ„é€ å‡½æ•°ï¼ˆæ³¨æ„ï¼šBTNodeåªèƒ½ä½œä¸ºæ ¹èŠ‚ç‚¹åˆ›å»ºï¼Œè€Œä¸”åˆ›å»ºçš„æ—¶å€™æ€»æœ‰0ä¸ªå…³é”®ç å’Œ1ä¸ªç©ºèŠ‚ç‚¹ï¼‰	
 	BTNode() { parent = nullptr; child.insert(0, nullptr); }
 	BTNode(T e , BTNodePosi(T) lc = nullptr , BTNodePosi(T) rc = nullptr)
 	{
