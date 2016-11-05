@@ -15,31 +15,29 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Huffman.h">
+    <ClInclude Include="primenlt.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="HuffChar.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HuffForest.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="huffman_pq.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Huffman_pq_implementation.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="huffman_test.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="mainPage.h">
+    <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="primenlt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="prime.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\Desktop\dsa\src\prime\prime-bitmap.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

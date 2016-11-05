@@ -4,13 +4,14 @@ BinNode<T>* AVL<T>::insert(const T& e)
 {
 	BinNodePosi(T)&x = BST<T>::search(e);
 	if (x) return x;
-	x = new BinNode<T>(e, _hot);
+	BinNodePosi(T) beforeInsertX = x;
+	x = new BinNode<T>(e, BST<T>::_hot);
 	++BinTree<T>::_size;
-	for (BinNodePosi(T) g = BST<T>::_hot; g; g = g->parent)
+	for (; beforeInsertX; beforeInsertX = beforeInsertX->parent)
 	{
-		if (!(AvlBalaanced(*g)))
+		if (beforeInsertX->height == 1)
 		{
-			FromParentTo(*g) = BST<T>::rotateAt(tallerChild(tallerChild(g)));
+			FromParentTo(*beforeInsertX) = BST<T>::rotateAt(tallerChild(tallerChild(g)));
 			break;
 		}
 		else

@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{285B448E-23EE-4CFD-A128-D6ABFD61F594}</ProjectGuid>
-    <RootNamespace>Huffman</RootNamespace>
+    <ProjectGuid>{4FEE6485-93AE-4B1B-80EC-FCAB9FCD2DB6}</ProjectGuid>
+    <RootNamespace>entry</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,16 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="HuffChar.h" />
-    <ClInclude Include="HuffForest.h" />
-    <ClInclude Include="Huffman.h" />
-    <ClInclude Include="huffman_pq.h" />
-    <ClInclude Include="Huffman_pq_implementation.h" />
-    <ClInclude Include="huffman_test.h" />
-    <ClInclude Include="mainPage.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="entry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

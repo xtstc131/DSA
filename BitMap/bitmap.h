@@ -12,7 +12,7 @@ private:
 protected:
 	void init(int n)
 	{
-		M = new char[N = (n + 7) / 8];
+		M = new char[N = (n + 7) / 8]; //µÈÐ§ÓÚcell(n / 8)
 		memset(M, 0, N);
 	}
 public:
@@ -21,7 +21,8 @@ public:
 	{
 		init(n);
 		FILE *fp = fopen(file, "r");
-		fread(M, sizeof(char), N, fp); fclose(fp);
+		fread(M, sizeof(char), N, fp); 
+		fclose(fp);
 	}
 	~bitmap()
 	{

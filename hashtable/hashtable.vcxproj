@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{285B448E-23EE-4CFD-A128-D6ABFD61F594}</ProjectGuid>
-    <RootNamespace>Huffman</RootNamespace>
+    <ProjectGuid>{3C19C0D3-FDDD-4598-9106-EDE48C5FAD63}</ProjectGuid>
+    <RootNamespace>hashtable</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,16 +110,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="HuffChar.h" />
-    <ClInclude Include="HuffForest.h" />
-    <ClInclude Include="Huffman.h" />
-    <ClInclude Include="huffman_pq.h" />
-    <ClInclude Include="Huffman_pq_implementation.h" />
-    <ClInclude Include="huffman_test.h" />
-    <ClInclude Include="mainPage.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="dictionary.h" />
+    <ClInclude Include="hashmap_get.h" />
+    <ClInclude Include="hashmap_implementation.h" />
+    <ClInclude Include="hashmap_put.h" />
+    <ClInclude Include="hashmap_remove.h" />
+    <ClInclude Include="hashmap_resize.h" />
+    <ClInclude Include="hashtable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

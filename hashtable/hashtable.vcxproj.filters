@@ -15,31 +15,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Huffman.h">
+    <ClInclude Include="hashtable.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="HuffChar.h">
+    <ClInclude Include="dictionary.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="HuffForest.h">
+    <ClInclude Include="hashmap_implementation.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="huffman_pq.h">
+    <ClInclude Include="hashmap_get.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Huffman_pq_implementation.h">
+    <ClInclude Include="hashmap_remove.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="huffman_test.h">
+    <ClInclude Include="hashmap_put.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="mainPage.h">
+    <ClInclude Include="hashmap_resize.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

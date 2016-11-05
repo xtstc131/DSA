@@ -15,25 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Huffman.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HuffChar.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HuffForest.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="huffman_pq.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Huffman_pq_implementation.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="huffman_test.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="mainPage.h">
+    <ClInclude Include="stringTool.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

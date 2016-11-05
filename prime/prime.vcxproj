@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{285B448E-23EE-4CFD-A128-D6ABFD61F594}</ProjectGuid>
-    <RootNamespace>Huffman</RootNamespace>
+    <ProjectGuid>{513067BC-1018-42CF-9067-3B196B053C8B}</ProjectGuid>
+    <RootNamespace>prime</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,16 +110,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="HuffChar.h" />
-    <ClInclude Include="HuffForest.h" />
-    <ClInclude Include="Huffman.h" />
-    <ClInclude Include="huffman_pq.h" />
-    <ClInclude Include="Huffman_pq_implementation.h" />
-    <ClInclude Include="huffman_test.h" />
-    <ClInclude Include="mainPage.h" />
+    <ClInclude Include="primenlt.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="primenlt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="prime.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\Desktop\dsa\src\prime\prime-bitmap.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

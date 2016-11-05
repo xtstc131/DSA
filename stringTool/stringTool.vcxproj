@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{285B448E-23EE-4CFD-A128-D6ABFD61F594}</ProjectGuid>
-    <RootNamespace>Huffman</RootNamespace>
+    <ProjectGuid>{A22453A1-6D74-453F-9493-8B5D8D034BF1}</ProjectGuid>
+    <RootNamespace>stringTool</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,13 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="HuffChar.h" />
-    <ClInclude Include="HuffForest.h" />
-    <ClInclude Include="Huffman.h" />
-    <ClInclude Include="huffman_pq.h" />
-    <ClInclude Include="Huffman_pq_implementation.h" />
-    <ClInclude Include="huffman_test.h" />
-    <ClInclude Include="mainPage.h" />
+    <ClInclude Include="stringTool.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
